@@ -1,0 +1,250 @@
+/*prevent problems with different browsers */
+* {box-sizing: border-box;}
+
+
+body {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      font-style: normal;
+      margin: 0;
+    }
+    
+/*Header*/
+header {
+    background-color: #067bc2;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+} 
+header div {
+    padding-left: 2vw;
+}
+header h1 {
+    margin: 0;
+    color: #84bcda;
+}
+header p {
+    margin: 0;
+    color: #84bcda;
+    letter-spacing: .8px;
+}
+
+/*Nav*/
+/*small screen*/
+@media only screen and (max-width: 800px) {
+    nav ul{
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #84bcda;
+        color:#067bc2;
+    }
+    nav .active a {
+        background-color: #84bcda;
+        color: #067bc2;
+        background-image: linear-gradient(to bottom, #8dcaeb, #84bcda)
+    }
+}
+/*end media query*/
+
+/*big screens*/
+@media only screen and (min-width: 801px) {
+    nav{
+        background-color:#84bcda;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+    }
+    nav ul li a {
+        font-size: 1rem; 
+        text-decoration: none;
+        color: #067bc2;
+        font-weight: 700;
+        display: block;
+        padding: .92rem 2rem;
+    }
+    nav li.active a{
+        background-color: #067bc2;
+        color: #84bcda;
+    }
+    nav a:hover {
+        color: #046097;
+    }
+} /*end media query*/
+
+
+/*main*/
+main {
+    padding: 1rem;
+}
+main h1 {
+    color: #067bc2;
+    margin-bottom: 1rem;
+}
+main h2 {
+    color:#d56062;
+    margin-bottom: .2rem;
+}
+main p {
+    color: #02395a;
+    margin: 0 0 1rem 0;
+}
+main ul {
+    padding: .5rem 3vw;
+}
+main ul {
+    list-style-type: circle;
+}
+main dl dt {
+    color:#02395a;
+    font-weight: 700;
+}
+main dl dd {
+    color:#02395a;
+    font-size: .9rem;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+main address {
+    font-style: normal;
+    background-color: #84bcda;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #02395a;
+    border-radius: .5rem;
+}
+main a {
+    color: #0570b0;
+    text-decoration: none;
+    font-weight: 700;
+}
+.airplane {
+    width: 100%;
+    margin:0;
+}
+.airplane img {
+    width: 100%;
+    height: auto;
+}
+main a:hover {
+    color: #d56062;
+}
+main p {
+    margin-top: .8rem;
+}
+figure.airplane {
+    width:38%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+figure.airplane img {
+    width: 100%;
+    height: auto;
+}
+.package {
+    display: flex;
+    margin: 0 0 1rem 0;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.package-image {
+    margin: 1vw 0 0 0;
+    max-width: 500px;
+}
+.package img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.myForm fieldset {
+    border: 1px solid #067bc2;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myForm legend {
+    color: #d56062;
+    font-size: .8rem;
+}
+.myform label {
+    margin:.5rem;
+}
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea {
+    display: block;
+}
+.myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea {
+    border: solid 1px #84bcda;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight:400;
+}
+.myForm :required {
+    background-color:#eeeeee;
+}
+.myForm [type=submit] {
+    background-color:#d56062;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: #ffffff;
+    margin: 1rem 0 0 1vw;
+}
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+    background-color:#067bc2;
+    text-align: center;
+    color:#84bcda;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+    box-shadow: 3px 3px 6px 1px #84bcda;
+}
+div.gallery figure:hover {
+    box-shadow: 6px 6px 10px rgba(132,188,218,0.6)
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color:#02395a;
+}
+footer a {
+    color:#02395a;
+}
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+
